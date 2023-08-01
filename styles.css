@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500&display=swap');
+
+
+:root {
+    --primary-clr: hsl(185, 75%, 39%);
+    --headings-clr: hsl(229, 23%, 23%);
+    --headings2-clr: hsl(227, 10%, 46%);
+    --primary-neutral-clr: hsl(0, 0%, 59%);
+
+    --font-family-default: 'Kumbh Sans';
+
+    --fs-50: .75rem;
+    --fs-100: 1rem;
+    --fs-200: 1.5rem;
+    --fs-300: 1.25rem;
+    --fs-400: 1.5rem;
+    --fs-500: 1.75rem;
+    --fs-600: 2rem;
+
+    -fw-regular: 400;
+    -fw-bold: 900;
+    --fw-black: 1000;
+}
+
+* {
+    margin: 0;
+    font: inherit;
+}
+
+body {
+    font-family: var(--font-family-default);
+    font-size: var(--fs-100);
+    font-weight: var(--fw-regular);
+    color: var(--headings-clr);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--primary-clr);
+    box-sizing: border-box;
+}
+
+img, svg {
+    max-width: 100%;
+    display: block;
+}
+
+main {
+    display: flex;
+}
+
+.main-div {
+    max-width: 36rem;
+    background-color: var(--primary-clr);
+    overflow: hidden;
+    border-radius: 1rem;;
+    
+}
+
+.grid-flow {
+    display: grid;
+    place-items: center;
+}
+
+.flex-group {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.pattern-rec {
+    background: url('./images/bg-pattern-card.svg');
+    background-size: cover;
+    height: 10rem;
+}
+
+.image {
+   border-radius: 50%;
+   border: .5rem solid white;
+   overflow: hidden;
+   margin: -50px 0 0 0;
+}
+
+.details {
+    gap: .5rem;
+    background-color: white;
+    padding-inline: 2rem;
+
+}
+
+.name {
+    font-size: var(--fs-400);
+    font-weight: var(--fw-black);
+    color: var(--headings-clr);
+}
+
+.personal-details {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 0 0;
+    gap: 1rem;
+    
+}
+
+span {
+    color: var(--headings2-clr);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-300);
+}
+
+.place {
+    color: var(--headings2-clr);
+    padding-bottom: 1rem;
+}
+
+hr {
+    width: 120%;
+    border: .01rem solid hsla(0, 0%, 59%, 0.336);
+}
+
+.stats {
+    text-align: center;
+}
+
+.count {
+    font-size: var(--fs-300);
+    font-weight: var(--fw-black);
+}
+
+.count-reference {
+    font-size: var(--fs-50);
+    color: var(--headings2-clr);
+    letter-spacing: .1rem;
+    padding: .5rem;
+}
